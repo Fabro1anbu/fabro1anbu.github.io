@@ -158,7 +158,7 @@ html, body {
 /* Background-color */
 .gray-bg {
     background-color: #e1e1e1;
-}
+}   
 
 /* HEADER
 ================================================== */
@@ -171,7 +171,8 @@ html, body {
 }
 
 .site-logo img {
-    padding-bottom: 2px;
+    border: 1px solid rgb(24, 1, 1); 
+    margin: 35px;
 }
 
 /* Navigation */
@@ -262,7 +263,7 @@ html, body {
 .site-main {
     position: relative;
     margin-bottom: 100px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     z-index: 1;
 }
 /* site-section */
@@ -522,8 +523,41 @@ html, body {
 
 .section-form .btn {
     margin-top: 40px;
+    flex-direction: column;
 }
 
+#status
+{
+width: 90;
+max-width: 500px;
+text-align: center;
+padding: 10px;
+margin: 0 auto;
+border-radius: 8px;
+}
+#status.success 
+{
+background-color: rgb(211, 250, 153);
+animation: status 4s ease  forwards;
+}
+#status.error
+{
+background-color: whitesmoke;
+animation: status 4s ease  forwards;
+}
+@keyframes status
+{
+0%{
+opacity: 1;
+pointer-events:all;
+
+}
+90%{opacity: 1;
+    pointer-events:all;
+    }
+100%{opacity: 0;
+    pointer-events:none;
+    }}
 /* FOOTER
 ================================================== */
 .site-footer {
