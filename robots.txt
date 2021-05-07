@@ -1,0 +1,4 @@
+﻿User-agent: Googlebot
+Disallow:
+
+sitemap: https://fabro1anbu.github.io/Blog/sitemap.xml
